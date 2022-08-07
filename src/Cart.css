@@ -1,0 +1,15 @@
+.cart{
+    display: inline-block;
+    font-size: large;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cadetblue;
+    cursor: pointer;
+    
+}

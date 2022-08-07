@@ -18,10 +18,11 @@
     font-family: sans-serif;
 }
 
-.title,.cart{
+.title{
     display: inline-block;
 }
 .cart{
+    display: inline-block;
     font-size: large;
     padding: 5px;
     border: 1px solid black;
