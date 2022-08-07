@@ -1,8 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Navbar";
+import Summary from "./Summary";
+import Menu from "./Menu";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <h1>Hello, Mr. Prashant</h1>;
+  return (
+    <>
+      <Navbar />
+      <div className="Main">
+        <Summary />
+        <Menu />
+      </div>
+    </>
+  );
 }
 
 export default App;

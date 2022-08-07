@@ -1,0 +1,35 @@
+.main-content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:auto;
+    width: 60%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding: 15px;
+    background-color:cadetblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0px 30px 0 rgb(107, 11, 11)
+}
+
+.main-content-details{
+    display:flex;
+    flex-direction: column;
+}
+.main-content-addon{
+    display:flex;
+    flex-direction: column;
+
+}
+.font{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.font-sub{
+    font-size: 1.5rem;
+}
+
+
