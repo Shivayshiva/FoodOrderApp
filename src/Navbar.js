@@ -1,10 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 import Cart from "./Cart";
-// import { contentprovider } from "./Menu";
+// import { UserContext } from "./App";
 
 const Navbar = () => {
-  //   const usevalue = useContext(contentprovider);
+    // const usevalue = useContext(UserContext);
   return (
     <div className="header">
       <div className="title">ReactFoods</div>

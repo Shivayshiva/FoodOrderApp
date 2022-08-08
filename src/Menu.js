@@ -1,9 +1,7 @@
 import React, { useReducer } from "react";
 import "./Menu.css";
-// import Total from "./Total";
 
-export const data = [{ food: "Biryani", amount: 240, count: 1 }];
-
+export const data = [];
 const Menu = () => {
   const reducer = (state, action) => {
     switch (action.type) {
@@ -33,7 +31,8 @@ const Menu = () => {
         return;
     }
   };
-  const [foodlist, dispatch] = useReducer(reducer, data);
+  var [foodlist, dispatch] = useReducer(reducer, data);
+
   let biryanicount = () => {
     return foodlist.filter((x) => {
       return x.food === "Biryani";
@@ -99,6 +98,7 @@ const Menu = () => {
       return x.food === "Chocolate Brownie";
     }).length;
   };
+  console.log(foodlist);
 
   return (
     <div className="main-box">

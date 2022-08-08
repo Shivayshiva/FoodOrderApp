@@ -9,14 +9,14 @@ import Menu, { data } from "./Menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const contentprovider = createContext();
+export const UserContext = createContext();
 
 function App() {
   return (
     <>
-      <contentprovider value={data}>
-        <Navbar />
-      </contentprovider>
+      <UserContext.Provider value={data}>
+        <Navbar totalorderdone={data} />
+      </UserContext.Provider>
       {/* <Navbar /> */}
       <div className="Main">
         <Summary />
