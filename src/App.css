@@ -1,8 +1,9 @@
 *{
   box-sizing: border-box;
-  z-index:0;
 }
 .Main{
+  position:relative;
+  z-index:-1;
  background-image: url("./background.jpg");
  background-attachment:scroll;
  background-position: center;

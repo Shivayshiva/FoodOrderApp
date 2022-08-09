@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import "./Menu.css";
 
 export const data = [];
-const Menu = () => {
+const Menu = (props) => {
   const reducer = (state, action) => {
     switch (action.type) {
       case "Biryani":
@@ -32,6 +32,7 @@ const Menu = () => {
     }
   };
   var [foodlist, dispatch] = useReducer(reducer, data);
+  props.setdata(foodlist);
 
   let biryanicount = () => {
     return foodlist.filter((x) => {

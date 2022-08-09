@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 // import React from "react";
 
 import Navbar from "./Navbar";
@@ -12,15 +12,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const UserContext = createContext();
 
 function App() {
+  const [menudata, setMenudata] = useState([]);
   return (
     <>
-      <UserContext.Provider value={data}>
-        <Navbar totalorderdone={data} />
+      <UserContext.Provider value={menudata}>
+        <Navbar totalorderdone={menudata} />
       </UserContext.Provider>
       {/* <Navbar /> */}
       <div className="Main">
         <Summary />
-        <Menu />
+        <Menu setdata={setMenudata} />
       </div>
     </>
   );
